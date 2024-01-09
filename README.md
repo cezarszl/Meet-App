@@ -31,7 +31,7 @@ Meet is a versatile events app that allows users to filter, explore, and visuali
 ## Scenarios using Gherkin syntax
 
 1. **Filter Events by City**
-*Scenario: User filters events by a specific city
+* Scenario: User filters events by a specific city
     - Given the user is on the events page
     - When the user selects "New York" from the city filter
     - Then the displayed events should only include those happening in New York
