@@ -75,6 +75,10 @@ Meet is a versatile events app that allows users to filter, explore, and visuali
 
 * React CRA
 
+## Serverless technology
+
+AWS Lambda functions will be employed to handle various backend functionalities efficiently. These serverless functions will dynamically filter and retrieve event data based on user preferences, manage the display of event details, and generate visualizations such as charts. Additionally, Lambda functions will contribute to offline capabilities by locally storing and retrieving relevant data, ensuring a seamless user experience even without an internet connection. Leveraging the benefits of serverless computing, AWS Lambda offers scalability, cost efficiency, and streamlined backend management for MeetApp's key features.
+
 ## Live demo
 
 https://cezarszl.github.io/meet/
