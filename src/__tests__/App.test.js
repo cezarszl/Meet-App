@@ -1,6 +1,5 @@
 import { render, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import EventList from '../components/EventList';
 import { getEvents } from '../api';
 import App from '../App';
 
