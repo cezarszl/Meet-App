@@ -23,7 +23,7 @@ describe('<Event/> component', () => {
     });
 
     test("checks if details are hidden", () => {
-        expect(EventComponent.container.querySelector('#details')).not.toBeInTheDocument();
+        expect(EventComponent.container.querySelector('.details')).not.toBeInTheDocument();
     });
 
     test("checks the 'show more' button", () => {
@@ -34,7 +34,7 @@ describe('<Event/> component', () => {
         const user = userEvent.setup()
         const button = EventComponent.queryByText('Show more')
         await user.click(button)
-        const details = EventComponent.container.querySelector('#details')
+        const details = EventComponent.container.querySelector('.details')
 
         expect(details).toBeInTheDocument()
     })

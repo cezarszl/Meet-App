@@ -8,7 +8,7 @@ describe("<NumberOfEvents /> component", () => {
     let NumberOfEventsComponent;
     beforeEach(() => {
         NumberOfEventsComponent = render(
-            <NumberOfEvents setCurrentNOE={() => { }} setErrorAlert={() => { }} />
+            <NumberOfEvents setCurrentNOE={() => { }} />
         );
     });
 
@@ -34,3 +34,4 @@ describe("<NumberOfEvents /> component", () => {
         expect(input).toHaveValue("10");
     });
 });
+
