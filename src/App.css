@@ -2,10 +2,12 @@
 .App {
   text-align: center;
   padding: 2% 5%;
+  background-color: #ceebc6;
 }
 
 .App * {
   box-sizing: border-box;
+  display: grid;
 }
 
 ul {
@@ -16,6 +18,18 @@ ul {
 p {
   margin: 5px 0;
 }
+details {
+  font: 16px "Open Sans", Calibri, sans-serif;
+  width: 620px;
+}
+
+details > summary {
+  display: none;
+  cursor: pointer;
+  list-style: none;
+  visibility: hidden;
+}
+
 
 input[type="text"],
 input[type="number"] {
@@ -28,10 +42,8 @@ input[type="number"] {
   align-self: center;
   height: 38px;
   margin-bottom: 20px;
-}
 
-.city {
-  width: 250px;
+  color: #1e1a3b;
 }
 
 #city-search {
@@ -41,6 +53,12 @@ input[type="number"] {
   position: relative;
 }
 
+#number-of-events {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  position: relative;
+}
 .suggestions {
   width: 250px;
   position: absolute;
@@ -69,14 +87,25 @@ input[type="number"] {
 }
 
 .event {
-  padding: 10px 10px 35px;
+  padding: 20px 20px 35px;
   margin-bottom: 10px;
   text-align: left;
-  border: 1px solid #ccc;
+  border: 1px solid #ceebc6;
   border-radius: 4px;
   position: relative;
+  background-color: #ceebc6;
+ 
+}
+.event-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e1a3b;
 }
 
+.event-infos {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
 .details-btn {
   position: absolute;
   right: 5px;
@@ -93,4 +122,46 @@ input[type="number"] {
   left: 20px;
   width: 250px;
   z-index: 1000;
+}
+.title-box {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1ebd95;
+  text-align: center;
+}
+.subtitle {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1eb167;
+}
+
+.show-details,
+.hide-details {
+  color: #1eb167;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #f3ecff;
+}
+.graph-title {
+  margin-top: 90px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1eb167;
+}
+.charts-container {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .charts-container {
+    grid-template-columns: 1fr;
+  }
 }
