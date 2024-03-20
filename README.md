@@ -1,4 +1,4 @@
-# Meet App
+# TechMeet Tracker
 
 Meet is a versatile events app that allows users to filter, explore, and visualize events effortlessly. Whether you're looking for local meetups or exploring events in different cities, Meet has you covered.
 
