@@ -1,33 +1,15 @@
 # Meet App
 
-Meet is a versatile events app that allows users to filter, explore, and visualize events effortlessly. Whether you're looking for local meetups or exploring events in different cities, Meet has you covered.
+Meet App is a versatile events application that enables users to explore and manage events. It offers features like filtering events by city, showing or hiding event details, and managing the number of events displayed. The app supports offline usage and allows users to add a shortcut to their home screen for easy access. It also provides visual charts to help users understand event details better.
 
-## Features and user stories
-
-1. **Filter Events by City**
-   * As a user, I want to be able to choose a specific city so that I can find events happening in that location.
-   * Given I am on the events page, when I select a city from the filter options, then the displayed events should be limited to those in the selected city.
-
-2. **Show/Hide Event Details**
-   * As a user, I want the ability to see more or less information about an event without navigating away from the event list.
-   * Given I am viewing a list of events, when I click on a specific event, then the event details should either be shown or hidden based on the current state.
-
-3. **Specify Number of Events**
-   * As a user, I want to control the number of events displayed on the screen to suit my preferences.*
-   * Given I am on the events page, when I specify the number of events I want to see (e.g., 5, 10, 20), then the system should update the event list accordingly.
-
-4. **Use the App When Offline**
-   * As a user, I want to be able to access previously loaded event data even when I'm not connected to the internet.
-   * Given I have used the app and loaded event data, when I lose internet connectivity, then the app should still allow me to view the previously loaded event data.
-
-5. **Add an App Shortcut to the Home Screen**
-   * As a user, I want a quick and convenient way to access the Meet app.
-   * Given I have installed the app on my device, when I select the option to add a shortcut to the home screen, then a shortcut icon for the app should be added for easy access.
-
-6. **Display Charts Visualizing Event Details**
-   * As a user, I want to visually understand event details through charts for a more engaging experience.
-   * Given I am on the events page, when I choose to view charts, then the app should display visual charts providing insights into event details, such as attendance numbers or event categories.
-
+## Features
+- Filter events by city.
+- Toggle visibility of event details.
+- Control the number of displayed events.
+- Offline functionality.
+- Shortcut creation on home screen.
+- Charts visualizing event details.
+  
 ## Scenarios using Gherkin syntax
 
 1. **Filter Events by City**
@@ -71,15 +53,31 @@ Meet is a versatile events app that allows users to filter, explore, and visuali
     - When the user selects the option to view charts
     - Then the app should display visual charts providing insights into event details
 
-## Project depedencies
+## Technology
+- React (Create React App)
+- Serverless backend with AWS Lambda for dynamic data handling and offline support.
 
-* React CRA
 
-## Serverless technology
+Here's a condensed version of the README for the Meet App repository:
 
-AWS Lambda functions will be employed to handle various backend functionalities efficiently. These serverless functions will dynamically filter and retrieve event data based on user preferences, manage the display of event details, and generate visualizations such as charts. Additionally, Lambda functions will contribute to offline capabilities by locally storing and retrieving relevant data, ensuring a seamless user experience even without an internet connection. Leveraging the benefits of serverless computing, AWS Lambda offers scalability, cost efficiency, and streamlined backend management for MeetApp's key features.
+markdown
+Copy code
+# Meet App
 
-## Live demo
+Meet App is a versatile events application that enables users to explore and manage events. It offers features like filtering events by city, showing or hiding event details, and managing the number of events displayed. The app supports offline usage and allows users to add a shortcut to their home screen for easy access. It also provides visual charts to help users understand event details better.
 
-https://cezarszl.github.io/meet/
+## Features
+- Filter events by city.
+- Toggle visibility of event details.
+- Control the number of displayed events.
+- Offline functionality.
+- Shortcut creation on home screen.
+- Charts visualizing event details.
+
+## Technology
+- React (Create React App)
+- Serverless backend with AWS Lambda for dynamic data handling and offline support.
+
+## Live Demo
+Check out the live demo [here](https://cezarszl.github.io/meet/).
 
